@@ -1,0 +1,70 @@
+{
+  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
+  "name": "dharmakit",
+  "description": "佛教文献检索工具集 — 按数据源分为三个套件：汉文大藏经、藏文文献、藏文大藏经",
+  "owner": {
+    "name": "dharmakit"
+  },
+  "plugins": [
+    {
+      "name": "cbeta",
+      "source": "./plugins/cbeta",
+      "displayName": "汉文大藏经（CBETA）",
+      "description": "汉文佛典检索套件，两个技能：cbeta 走法鼓文理学院官方 API，取经文全文、册页行引用锚点（linehead）、书目元数据，免 key 免注册；cbeta-local 是可选的本地全文检索，SQLite FTS5 单次几毫秒不联网，结果自带精确到行的锚点，需自己下载 CBETA 官方 XML 建一次索引。",
+      "version": "2.0.0",
+      "author": {
+        "name": "dharmakit"
+      },
+      "license": "MIT",
+      "category": "research",
+      "keywords": [
+        "chinese-buddhism",
+        "cbeta",
+        "taisho",
+        "canon",
+        "汉文",
+        "大藏经"
+      ]
+    },
+    {
+      "name": "bdrc",
+      "source": "./plugins/bdrc",
+      "displayName": "藏文文献（BDRC）",
+      "description": "BDRC 佛教数字资源中心套件，三个技能：bdrc-es 搜全库书目拿可下载的 MW 号（免注册免 token）；bdrc 下载扫描本 PDF（需自己的 BDRC token）；bdrc-ocr 用 BDRC 开源模型做藏文离线 OCR，印刷体、木刻版、手写乌梅体各有模型。",
+      "version": "2.0.0",
+      "author": {
+        "name": "dharmakit"
+      },
+      "license": "MIT",
+      "category": "research",
+      "keywords": [
+        "tibetan",
+        "buddhism",
+        "bdrc",
+        "manuscripts",
+        "ocr",
+        "藏文"
+      ]
+    },
+    {
+      "name": "adarshah",
+      "source": "./plugins/adarshah",
+      "displayName": "藏文大藏经（Adarshah）",
+      "description": "藏文大藏经与祖师文集全文检索。覆盖德格、江、拉萨、那塘、北京等多种甘珠尔与丹珠尔，以及宗喀巴、多罗那他、萨迦诸祖等文集。用于追查一句藏文的出处、判断直引还是改写、做多版本对照。站点免费，无需注册或 API key。",
+      "version": "2.0.0",
+      "author": {
+        "name": "dharmakit"
+      },
+      "license": "MIT",
+      "category": "research",
+      "keywords": [
+        "tibetan",
+        "buddhism",
+        "kangyur",
+        "tengyur",
+        "philology",
+        "藏文"
+      ]
+    }
+  ]
+}

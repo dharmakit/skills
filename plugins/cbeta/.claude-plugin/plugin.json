@@ -1,0 +1,10 @@
+{
+  "name": "cbeta",
+  "description": "汉文大藏经检索套件 — CBETA 官方 API 取文与册页行锚点，外加可选的本地全文检索",
+  "version": "2.0.0",
+  "author": {
+    "name": "dharmakit"
+  },
+  "license": "MIT",
+  "keywords": ["chinese-buddhism", "cbeta", "taisho", "canon", "fulltext-search"]
+}

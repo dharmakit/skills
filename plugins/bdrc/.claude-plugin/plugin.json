@@ -1,0 +1,10 @@
+{
+  "name": "bdrc",
+  "description": "BDRC 藏文文献套件 — 书目检索、扫描本 PDF 下载、藏文离线 OCR",
+  "version": "2.0.0",
+  "author": {
+    "name": "dharmakit"
+  },
+  "license": "MIT",
+  "keywords": ["tibetan", "buddhism", "bdrc", "manuscripts", "ocr", "catalog"]
+}

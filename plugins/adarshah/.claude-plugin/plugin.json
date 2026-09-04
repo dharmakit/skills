@@ -1,0 +1,10 @@
+{
+  "name": "adarshah",
+  "description": "Adarshah 藏文大藏经全文检索 — 追查藏文出处、多版本对照、祖师文集检索",
+  "version": "2.0.0",
+  "author": {
+    "name": "dharmakit"
+  },
+  "license": "MIT",
+  "keywords": ["tibetan", "buddhism", "kangyur", "tengyur", "philology"]
+}
